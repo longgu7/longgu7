@@ -15,8 +15,8 @@ const ConfigPath = joinP(__dirname, './config.js'), LogPath = joinP(__dirname, '
 }, cookies = {};
 
 let uuidOrg, curPrompt = {}, prevPrompt = {}, prevMessages = [], prevImpersonated = false, Config = {
-    Cookie: '',
-    Ip: '127.0.0.1',
+    Cookie:process.env.cookies,
+    Ip: '0.0.0.0',
     Port: 8444,
     BufferSize: 8,
     SystemInterval: 3,
